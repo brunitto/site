@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Adding a light background color for better contrast */
+    color: #333; /* Default text color */
+}
+
+h1 {
+    color: #336699; /* A nice blue color for the heading */
+}
+
+p {
+    line-height: 1.6; /* Improve readability for paragraphs */
+}
