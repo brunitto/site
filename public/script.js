@@ -1,5 +1,12 @@
 // Log a message to the console
 console.log("Hello from script.js!");
 
-// Display an alert to the user
-alert("Welcome to the site!");
+document.addEventListener('DOMContentLoaded', () => {
+    const markdownDiv = document.getElementById('markdown-content');
+    if (markdownDiv) {
+        const markdownText = markdownDiv.textContent;
+        const htmlContent = marked.parse(markdownText);
+        console.log("Rendered HTML:", htmlContent);
+        markdownDiv.innerHTML = htmlContent;
+    }
+});
